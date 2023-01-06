@@ -42,7 +42,6 @@ with col1:
         var_states = st.session_state.states[var] + ('unknown',)
         st.radio(var,var_states,key=var, on_change=callback, horizontal=True, index=len(var_states) - 1)
 
-    "Hello"
 
 with col2:
     st.subheader("Stunting", anchor=None)
