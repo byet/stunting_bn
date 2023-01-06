@@ -66,7 +66,7 @@ with col2:
     plt.ylabel("Probability")
     plt.ylim(0,1)
     st.pyplot(plt, transparent=True)
-    st.markdown(f"**Pr({st.session_state.target}) = {st.session_state.post[1]:.2f}**")
+    st.markdown(f"**Pr({st.session_state.target} = yes) = {st.session_state.post[1]:.2f}**")
 
   
 
