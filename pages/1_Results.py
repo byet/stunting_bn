@@ -1,4 +1,5 @@
 import streamlit as st
+import pyAgrum.lib.notebook as gnb
 
 
 st.markdown(
@@ -25,5 +26,3 @@ st.markdown(
     )
 
 st.image("./img/roc.png")
-
-

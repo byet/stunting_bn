@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pyAgrum as gum
+import pyAgrum.lib.notebook as gnb
 import matplotlib.pyplot as plt
 
 
