@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 
 if 'bn' not in st.session_state:
     # Initialize app: load BN, extract variables and states, prepare inference engine
-    st.session_state['bn'] = gum.BayesNet("bn2")
-    st.session_state.bn.loadNET("bn2.net")
+    st.session_state['bn'] = gum.BayesNet("bn3")
+    st.session_state.bn.loadNET("bn3w_dir.net")
     target = "Stunting"
     st.session_state['target'] = target
     st.session_state['target_states'] = st.session_state.bn.variable(target).labels()
@@ -37,8 +37,23 @@ def callback():
         st.session_state['post'] =   st.session_state.ie.posterior(st.session_state.target).toarray()
 
 
+st.set_page_config(
+    page_title="Stunting BN",
+    page_icon="📶",
+)
+
+
+
 
 st.header("Stunting Bayesian Network", anchor=None)
+
+# st.sidebar.success("Select a demo above.")
+
+st.markdown(
+    """
+    Select values in the form below to compute the probability of stunting.
+    """
+)
 
 col1, col2 = st.columns(2)
 

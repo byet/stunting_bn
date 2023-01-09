@@ -1,0 +1,320 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="71pt" viewBox="0.00 0.00 360.00 70.94">
+<g id="graph0" class="graph" transform="scale(0.272833 0.272833) rotate(0) translate(4 256)">
+<title>G</title>
+<!-- Maternal_employment -->
+<g id="node1" class="node">
+<title>Maternal_employment</title>
+<g id="a_node1"><a xlink:title="(4) Maternal_employment : 1.54302">
+<ellipse fill="#7e63a6" stroke="black" cx="271.69" cy="-162" rx="92.08" ry="18"/>
+<text text-anchor="middle" x="271.69" y="-158.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Maternal_employment</text>
+</a>
+</g>
+</g>
+<!-- Exclusive_breastfeeding -->
+<g id="node13" class="node">
+<title>Exclusive_breastfeeding</title>
+<g id="a_node13"><a xlink:title="(2) Exclusive_breastfeeding : 0.19178">
+<ellipse fill="#50070c" stroke="black" cx="463.69" cy="-90" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="463.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Exclusive_breastfeeding</text>
+</a>
+</g>
+</g>
+<!-- Maternal_employment&#45;&gt;Exclusive_breastfeeding -->
+<g id="edge12" class="edge">
+<title>Maternal_employment-&gt;Exclusive_breastfeeding</title>
+<g id="a_edge12"><a xlink:title="4 → 2 : 0.0009364694822098685">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.13" d="M313.83,-145.64C342.64,-135.13 381.02,-121.14 411.73,-109.95"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.13" points="412.61,-113.35 420.8,-106.64 410.21,-106.77 412.61,-113.35"/>
+</a>
+</g>
+</g>
+<!-- HH_crowding -->
+<g id="node2" class="node">
+<title>HH_crowding</title>
+<g id="a_node2"><a xlink:title="(1) HH_crowding : 0.99066">
+<ellipse fill="#6b3e67" stroke="black" cx="63.69" cy="-234" rx="61.19" ry="18"/>
+<text text-anchor="middle" x="63.69" y="-230.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">HH_crowding</text>
+</a>
+</g>
+</g>
+<!-- Food_diversity -->
+<g id="node9" class="node">
+<title>Food_diversity</title>
+<g id="a_node9"><a xlink:title="(16) Food_diversity : 0.74895">
+<ellipse fill="#632d4b" stroke="black" cx="63.69" cy="-162" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="63.69" y="-158.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Food_diversity</text>
+</a>
+</g>
+</g>
+<!-- HH_crowding&#45;&gt;Food_diversity -->
+<g id="edge14" class="edge">
+<title>HH_crowding-&gt;Food_diversity</title>
+<g id="a_edge14"><a xlink:title="1 → 16 : 1.9356124270794714e-05">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.1" d="M63.69,-215.7C63.69,-207.98 63.69,-198.71 63.69,-190.11"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.1" points="67.19,-190.26 63.69,-180.26 60.19,-190.26 67.19,-190.26"/>
+</a>
+</g>
+</g>
+<!-- Animal_ownership -->
+<g id="node3" class="node">
+<title>Animal_ownership</title>
+<g id="a_node3"><a xlink:title="(14) Animal_ownership : 0.78242">
+<ellipse fill="#642f4f" stroke="black" cx="136.69" cy="-90" rx="78.79" ry="18"/>
+<text text-anchor="middle" x="136.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Animal_ownership</text>
+</a>
+</g>
+</g>
+<!-- Stunting -->
+<g id="node6" class="node">
+<title>Stunting</title>
+<g id="a_node6"><a xlink:title="(8) Stunting : 0.64675">
+<ellipse fill="#602640" stroke="black" cx="705.69" cy="-18" rx="40.09" ry="18"/>
+<text text-anchor="middle" x="705.69" y="-14.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Stunting</text>
+</a>
+</g>
+</g>
+<!-- Animal_ownership&#45;&gt;Stunting -->
+<g id="edge3" class="edge">
+<title>Animal_ownership-&gt;Stunting</title>
+<g id="a_edge3"><a xlink:title="14 → 8 : 0.0039768030223165">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.25" d="M193.67,-77.16C203.65,-75.29 213.96,-73.48 223.69,-72 380.84,-48.05 568.4,-30.6 656.01,-23.09"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.25" points="656.15,-26.59 665.82,-22.25 655.56,-19.61 656.15,-26.59"/>
+</a>
+</g>
+</g>
+<!-- ANC -->
+<g id="node4" class="node">
+<title>ANC</title>
+<g id="a_node4"><a xlink:title="(6) ANC : 1.10211">
+<ellipse fill="#6f4574" stroke="black" cx="868.69" cy="-162" rx="29.5" ry="18"/>
+<text text-anchor="middle" x="868.69" y="-158.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">ANC</text>
+</a>
+</g>
+</g>
+<!-- ANC&#45;&gt;Exclusive_breastfeeding -->
+<g id="edge2" class="edge">
+<title>ANC-&gt;Exclusive_breastfeeding</title>
+<g id="a_edge2"><a xlink:title="6 → 2 : 0.006690439781703736">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.35" d="M840.54,-156.13C779.74,-145.62 634.29,-120.49 542.91,-104.69"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.35" points="543.56,-101.25 533.11,-103 542.37,-108.15 543.56,-101.25"/>
+</a>
+</g>
+</g>
+<!-- Preterm_birth -->
+<g id="node17" class="node">
+<title>Preterm_birth</title>
+<g id="a_node17"><a xlink:title="(5) Preterm_birth : 0.10824">
+<ellipse fill="#4d0102" stroke="black" cx="1251.69" cy="-90" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="1251.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Preterm_birth</text>
+</a>
+</g>
+</g>
+<!-- ANC&#45;&gt;Preterm_birth -->
+<g id="edge5" class="edge">
+<title>ANC-&gt;Preterm_birth</title>
+<g id="a_edge5"><a xlink:title="6 → 5 : 0.0015313067727029473">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.16" d="M897.5,-156.92C953.09,-148.89 1078.92,-129.88 1183.69,-108 1188.36,-107.03 1193.19,-105.95 1198.03,-104.83"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.16" points="1198.77,-108.25 1207.69,-102.53 1197.15,-101.44 1198.77,-108.25"/>
+</a>
+</g>
+</g>
+<!-- Maternal_education -->
+<g id="node5" class="node">
+<title>Maternal_education</title>
+<g id="a_node5"><a xlink:title="(3) Maternal_education : 1.43047">
+<ellipse fill="#7a5c99" stroke="black" cx="463.69" cy="-162" rx="81.49" ry="18"/>
+<text text-anchor="middle" x="463.69" y="-158.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Maternal_education</text>
+</a>
+</g>
+</g>
+<!-- Maternal_education&#45;&gt;Exclusive_breastfeeding -->
+<g id="edge11" class="edge">
+<title>Maternal_education-&gt;Exclusive_breastfeeding</title>
+<g id="a_edge11"><a xlink:title="3 → 2 : 0.0034006650192645736">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.22" d="M463.69,-143.7C463.69,-136.07 463.69,-126.92 463.69,-118.4"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.22" points="467.19,-118.44 463.69,-108.44 460.19,-118.44 467.19,-118.44"/>
+</a>
+</g>
+</g>
+<!-- Toilet_access -->
+<g id="node7" class="node">
+<title>Toilet_access</title>
+<g id="a_node7"><a xlink:title="(13) Toilet_access : 0.79639">
+<ellipse fill="#653051" stroke="black" cx="290.69" cy="-90" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="290.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Toilet_access</text>
+</a>
+</g>
+</g>
+<!-- Toilet_access&#45;&gt;Stunting -->
+<g id="edge1" class="edge">
+<title>Toilet_access-&gt;Stunting</title>
+<g id="a_edge1"><a xlink:title="13 → 8 : 0.0006476243245907166">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.12" d="M333.44,-77.49C341.47,-75.52 349.81,-73.6 357.69,-72 463.81,-50.51 589.71,-33.38 657.19,-24.87"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.12" points="657.44,-28.37 666.93,-23.65 656.57,-21.42 657.44,-28.37"/>
+</a>
+</g>
+</g>
+<!-- Maternal_age -->
+<g id="node8" class="node">
+<title>Maternal_age</title>
+<g id="a_node8"><a xlink:title="(7) Maternal_age : 1.45204">
+<ellipse fill="#7b5d9c" stroke="black" cx="1251.69" cy="-162" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="1251.69" y="-158.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Maternal_age</text>
+</a>
+</g>
+</g>
+<!-- Maternal_age&#45;&gt;Preterm_birth -->
+<g id="edge7" class="edge">
+<title>Maternal_age-&gt;Preterm_birth</title>
+<g id="a_edge7"><a xlink:title="7 → 5 : 6.569609980660272e-05">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.1" d="M1251.69,-143.7C1251.69,-135.98 1251.69,-126.71 1251.69,-118.11"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.1" points="1255.19,-118.26 1251.69,-108.26 1248.19,-118.26 1255.19,-118.26"/>
+</a>
+</g>
+</g>
+<!-- Food_diversity&#45;&gt;Stunting -->
+<g id="edge15" class="edge">
+<title>Food_diversity-&gt;Stunting</title>
+<g id="a_edge15"><a xlink:title="16 → 8 : 0.0005429483040621909">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.12" d="M53.45,-143.89C43.03,-124.02 30.74,-91.46 48.69,-72 89.61,-27.65 509.16,-20.4 655.59,-19.23"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.12" points="655.5,-22.73 665.48,-19.15 655.45,-15.73 655.5,-22.73"/>
+</a>
+</g>
+</g>
+<!-- Cooking_fuel -->
+<g id="node10" class="node">
+<title>Cooking_fuel</title>
+<g id="a_node10"><a xlink:title="(10) Cooking_fuel : 0.75547">
+<ellipse fill="#632d4c" stroke="black" cx="637.69" cy="-90" rx="59.29" ry="18"/>
+<text text-anchor="middle" x="637.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Cooking_fuel</text>
+</a>
+</g>
+</g>
+<!-- Cooking_fuel&#45;&gt;Stunting -->
+<g id="edge8" class="edge">
+<title>Cooking_fuel-&gt;Stunting</title>
+<g id="a_edge8"><a xlink:title="10 → 8 : 0.001775496258815715">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.16" d="M653.81,-72.41C662.57,-63.39 673.55,-52.09 683.15,-42.21"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.16" points="685.53,-44.78 689.99,-35.17 680.51,-39.9 685.53,-44.78"/>
+</a>
+</g>
+</g>
+<!-- Water_source -->
+<g id="node11" class="node">
+<title>Water_source</title>
+<g id="a_node11"><a xlink:title="(12) Water_source : 0.72787">
+<ellipse fill="#622b49" stroke="black" cx="773.69" cy="-90" rx="59.29" ry="18"/>
+<text text-anchor="middle" x="773.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Water_source</text>
+</a>
+</g>
+</g>
+<!-- Water_source&#45;&gt;Stunting -->
+<g id="edge17" class="edge">
+<title>Water_source-&gt;Stunting</title>
+<g id="a_edge17"><a xlink:title="12 → 8 : 0.0049139367129120365">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.28" d="M757.58,-72.41C748.82,-63.39 737.84,-52.09 728.24,-42.21"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.28" points="731,-40.03 721.52,-35.29 725.98,-44.9 731,-40.03"/>
+</a>
+</g>
+</g>
+<!-- Deworming -->
+<g id="node12" class="node">
+<title>Deworming</title>
+<g id="a_node12"><a xlink:title="(15) Deworming : 0.99842">
+<ellipse fill="#6c3e68" stroke="black" cx="903.69" cy="-90" rx="53.09" ry="18"/>
+<text text-anchor="middle" x="903.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Deworming</text>
+</a>
+</g>
+</g>
+<!-- Deworming&#45;&gt;Stunting -->
+<g id="edge4" class="edge">
+<title>Deworming-&gt;Stunting</title>
+<g id="a_edge4"><a xlink:title="15 → 8 : 9.524001371352198e-05">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.1" d="M867.84,-76.32C833.36,-64.14 781.35,-45.75 745.59,-33.1"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.1" points="747.15,-29.94 736.56,-29.91 744.82,-36.54 747.15,-29.94"/>
+</a>
+</g>
+</g>
+<!-- Exclusive_breastfeeding&#45;&gt;Stunting -->
+<g id="edge18" class="edge">
+<title>Exclusive_breastfeeding-&gt;Stunting</title>
+<g id="a_edge18"><a xlink:title="2 → 8 : 0.0005678889424409242">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.12" d="M514.43,-74.33C558.44,-61.6 621.43,-43.37 662.93,-31.37"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.12" points="663.66,-34.8 672.3,-28.66 661.72,-28.08 663.66,-34.8"/>
+</a>
+</g>
+</g>
+<!-- Sex -->
+<g id="node14" class="node">
+<title>Sex</title>
+<g id="a_node14"><a xlink:title="(9) Sex : 0.99929">
+<ellipse fill="#6c3e68" stroke="black" cx="1001.69" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="1001.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Sex</text>
+</a>
+</g>
+</g>
+<!-- Sex&#45;&gt;Stunting -->
+<g id="edge13" class="edge">
+<title>Sex-&gt;Stunting</title>
+<g id="a_edge13"><a xlink:title="9 → 8 : 0.00067672707176278">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.12" d="M980.72,-78.06C975.88,-75.83 970.68,-73.66 965.69,-72 893.62,-48.03 806.54,-32.95 753.68,-25.25"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.12" points="754.48,-21.83 744.08,-23.88 753.49,-28.76 754.48,-21.83"/>
+</a>
+</g>
+</g>
+<!-- Socio_economic_status -->
+<g id="node15" class="node">
+<title>Socio_economic_status</title>
+<g id="a_node15"><a xlink:title="(0) Socio_economic_status : 2.30365">
+<ellipse fill="#9898fd" stroke="black" cx="332.69" cy="-234" rx="94.48" ry="18"/>
+<text text-anchor="middle" x="332.69" y="-230.3" font-family="Times New Roman,serif" font-size="14.00">Socio_economic_status</text>
+</a>
+</g>
+</g>
+<!-- Socio_economic_status&#45;&gt;Maternal_education -->
+<g id="edge10" class="edge">
+<title>Socio_economic_status-&gt;Maternal_education</title>
+<g id="a_edge10"><a xlink:title="0 → 3 : 0.13613174192634633">
+<path fill="none" stroke="#4a4a4a" stroke-width="5.1" d="M363.41,-216.59C380.12,-207.66 401.08,-196.46 419.51,-186.61"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="5.1" points="421.39,-190.67 428.11,-182.02 417.18,-182.79 421.39,-190.67"/>
+</a>
+</g>
+</g>
+<!-- Socio_economic_status&#45;&gt;Food_diversity -->
+<g id="edge9" class="edge">
+<title>Socio_economic_status-&gt;Food_diversity</title>
+<g id="a_edge9"><a xlink:title="0 → 16 : 0.03328800999983317">
+<path fill="none" stroke="#4a4a4a" stroke-width="1.32" d="M278.58,-218.92C232.76,-206.99 167.27,-189.95 120.65,-177.82"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="1.32" points="121.72,-174.48 111.17,-175.35 119.96,-181.26 121.72,-174.48"/>
+</a>
+</g>
+</g>
+<!-- Pollution_birth -->
+<g id="node16" class="node">
+<title>Pollution_birth</title>
+<g id="a_node16"><a xlink:title="(11) Pollution_birth : 0.93175">
+<ellipse fill="#693960" stroke="black" cx="1110.69" cy="-90" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="1110.69" y="-86.3" font-family="Times New Roman,serif" font-size="14.00" fill="white">Pollution_birth</text>
+</a>
+</g>
+</g>
+<!-- Pollution_birth&#45;&gt;Stunting -->
+<g id="edge16" class="edge">
+<title>Pollution_birth-&gt;Stunting</title>
+<g id="a_edge16"><a xlink:title="11 → 8 : 6.054422327221305e-05">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.1" d="M1063.68,-77.54C1055.06,-75.58 1046.12,-73.65 1037.69,-72 937.11,-52.28 818.3,-34.68 753.6,-25.56"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.1" points="754.23,-22.12 743.84,-24.2 753.26,-29.05 754.23,-22.12"/>
+</a>
+</g>
+</g>
+<!-- Preterm_birth&#45;&gt;Stunting -->
+<g id="edge6" class="edge">
+<title>Preterm_birth-&gt;Stunting</title>
+<g id="a_edge6"><a xlink:title="5 → 8 : 0.00010267638118097665">
+<path fill="none" stroke="#4a4a4a" stroke-width="0.1" d="M1208.35,-77.24C1200.2,-75.29 1191.72,-73.44 1183.69,-72 1028.56,-44.14 842.3,-28.55 755.17,-22.28"/>
+<polygon fill="#4a4a4a" stroke="#4a4a4a" stroke-width="0.1" points="755.68,-18.81 745.46,-21.59 755.18,-25.79 755.68,-18.81"/>
+</a>
+</g>
+</g>
+</g>
+</svg>
