@@ -1,0 +1,458 @@
+{
+  "Stunting": {
+    "NodeID": "Stunting",
+    "DAG_frag": "Child",
+    "Description": "Height-for-age categorized as below 2 standard deviations from expected.",
+    "DHS7_Recode": "hc70",
+    "DHS_desc": "Height/Age standard deviation (new WHO)",
+    "all_missing": false,
+    "DHS_states": {
+      "9996": "height out of plausible limits",
+      "9997": "age in days out of plausible limits",
+      "9998": "flagged cases",
+      "9999": "missing"
+    },
+    "BN_states": {
+      "FALSE": "no",
+      "TRUE": "yes"
+    },
+    "fun": "function (x) \n{\n    x <= -200\n}",
+    "missing_vals": [9996, 9997, 9998, 9999]
+  },
+  "Sex": {
+    "NodeID": "Sex",
+    "DAG_frag": "Child",
+    "Description": "Biological sex of the child.",
+    "DHS7_Recode": "b4",
+    "DHS_desc": "Sex of child",
+    "all_missing": false,
+    "DHS_states": {
+      "1": "male",
+      "2": "female"
+    },
+    "BN_states": {
+      "1": "male",
+      "2": "female"
+    },
+    "fun": "NULL"
+  },
+  "Animal_ownership": {
+    "NodeID": "Animal_ownership",
+    "DAG_frag": "Food environment",
+    "Description": "Indicies of ownership of livestock",
+    "DHS7_Recode": "hv246",
+    "DHS_desc": "Owns livestock, herds or farm animals",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "no",
+      "1": "yes",
+      "9": "missing"
+    },
+    "BN_states": {
+      "0": "no",
+      "1": "yes"
+    },
+    "fun": "NULL",
+    "missing_vals": 9
+  },
+  "ANC": {
+    "NodeID": "ANC",
+    "DAG_frag": "Maternal",
+    "Description": "The number of antenadal care visits",
+    "DHS7_Recode": "m14",
+    "DHS_desc": "Number of antenatal visits during pregnancy",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "no antenatal visits",
+      "98": "don't know",
+      "99": "missing"
+    },
+    "BN_states": {
+      "1": "none",
+      "2": "btw1a3",
+      "3": "great4"
+    },
+    "fun": "function (x) \n{\n    x <- if_else(x == 0, 1, if_else(x >= 4, 3, 2))\n}",
+    "missing_vals": [98, 99]
+  },
+  "Cooking_fuel": {
+    "NodeID": "Cooking_fuel",
+    "DAG_frag": "Home environment",
+    "Description": "Fuel used for cooking",
+    "DHS7_Recode": "hv226",
+    "DHS_desc": "Type of cooking fuel",
+    "all_missing": false,
+    "DHS_states": {
+      "1": "electricity",
+      "2": "lpg",
+      "3": "natural gas",
+      "4": "biogas",
+      "5": "kerosene",
+      "6": "coal",
+      "7": "lignite",
+      "8": "charcoal",
+      "9": "wood",
+      "10": "straw/shrubs/grass",
+      "11": "agricultural crop",
+      "95": "animal dung",
+      "96": "no food cooked in house",
+      "99": "other",
+      "15": "missing"
+    },
+    "BN_states": {
+      "1": "other",
+      "2": "biomass"
+    },
+    "fun": "function (x) \n{\n    if_else(x < 7, 1, if_else(x == 96 | x == 95, 1, 2))\n}",
+    "missing_vals": 99
+  },
+  "Water_source": {
+    "NodeID": "Water_source",
+    "DAG_frag": "Home environment",
+    "Description": "Source of drinking water",
+    "DHS7_Recode": "hv201",
+    "DHS_desc": "Source of drinking water",
+    "all_missing": false,
+    "DHS_states": {
+      "10": "piped water",
+      "11": "piped into dwelling",
+      "12": "piped to yard/plot",
+      "13": "piped to neighbor",
+      "14": "public tap/standpipe",
+      "20": "tube well water",
+      "21": "tube well or borehole",
+      "30": "dug well (open/protected)",
+      "31": "protected well",
+      "32": "unprotected well",
+      "40": "surface from spring",
+      "41": "protected spring",
+      "42": "unprotected spring",
+      "43": "river/dam/lake/ponds/stream/canal/irrigation channel",
+      "51": "rainwater",
+      "61": "tanker truck",
+      "62": "cart with small tank",
+      "71": "bottled water",
+      "96": "other",
+      "99": "missing"
+    },
+    "BN_states": {
+      "1": "protected",
+      "2": "unprotected",
+      "3": "other"
+    },
+    "fun": "function (x) \n{\n    if_else(x <= 31 | x %in% c(61, 62, 71), 1, if_else(x == 96, 3, 2))\n}",
+    "missing_vals": 99
+  },
+  "Socio_economic_status": {
+    "NodeID": "Socio_economic_status",
+    "DAG_frag": "Home environment",
+    "Description": "Wealth index of household assets",
+    "DHS7_Recode": "hv270",
+    "DHS_desc": "Wealth index combined",
+    "all_missing": false,
+    "DHS_states": {
+      "1": "poorest",
+      "2": "poorer",
+      "3": "middle",
+      "4": "richer",
+      "5": "richest"
+    },
+    "BN_states": {
+      "1": "poorest",
+      "2": "poorer",
+      "3": "middle",
+      "4": "richer",
+      "5": "richest"
+    },
+    "fun": "NULL",
+    "missing_vals": null
+  },
+  "Toilet_access": {
+    "NodeID": "Toilet_access",
+    "DAG_frag": "Home environment",
+    "Description": "Toilet facilities used as proxy for parasite exposure",
+    "DHS7_Recode": "hv225",
+    "DHS_desc": "Share toilet with other households",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "no",
+      "1": "yes",
+      "9": "missing"
+    },
+    "BN_states": {
+      "0": "no",
+      "1": "yes"
+    },
+    "fun": "NULL",
+    "missing_vals": 9
+  },
+  "Deworming": {
+    "NodeID": "Deworming",
+    "DAG_frag": "Gut health",
+    "Description": "given deworming medication in the past 6 months",
+    "DHS7_Recode": "h43",
+    "DHS_desc": "Drugs for intestinal parasites in last 6 months",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "no",
+      "1": "yes",
+      "8": "don't know",
+      "9": "missing"
+    },
+    "BN_states": {
+      "0": "no",
+      "1": "yes"
+    },
+    "fun": "NULL",
+    "missing_vals": [8, 9]
+  },
+  "Exclusive_breastfeeding": {
+    "NodeID": "Exclusive_breastfeeding",
+    "DAG_frag": "Diet",
+    "Description": "Was the child breast fed exclusively for 6 months",
+    "DHS7_Recode": "m4",
+    "DHS_desc": "Duration of breastfeeding",
+    "all_missing": false,
+    "DHS_states": {
+      "93": "ever breastfed",
+      "94": "not currently breastfeeding",
+      "95": "never breastfed",
+      "96": "still breastfeeding",
+      "97": "breastfed until died",
+      "98": "inconsistent",
+      "99": "don't know",
+      "8": "missing"
+    },
+    "BN_states": {
+      "FALSE": "no",
+      "TRUE": "yes"
+    },
+    "fun": "function (x) \n{\n    x != 94\n}",
+    "missing_vals": [98, 99]
+  },
+  "Birthweight": {
+    "NodeID": "Birthweight",
+    "DAG_frag": "Child",
+    "Description": "Weight at birth",
+    "DHS7_Recode": "m19",
+    "DHS_desc": "Birth weight in kilograms (3 decimals)",
+    "all_missing": false,
+    "DHS_states": {
+      "9996": "not weighed at birth",
+      "9998": "don't know",
+      "9999": "missing"
+    },
+    "BN_states": {
+      "FALSE": "heavierThan2500",
+      "TRUE": "lighterThan2500"
+    },
+    "fun": "function (x) \n{\n    x < 2500\n}",
+    "missing_vals": [9996, 9998, 9999]
+  },
+  "Maternal_education": {
+    "NodeID": "Maternal_education",
+    "DAG_frag": "Maternal",
+    "Description": "The last level of education",
+    "DHS7_Recode": "v106",
+    "DHS_desc": "Highest educational level",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "no education",
+      "1": "primary",
+      "2": "secondary",
+      "3": "higher",
+      "6": "others",
+      "9": "missing"
+    },
+    "BN_states": {
+      "0": "none",
+      "1": "primary",
+      "2": "secondary",
+      "3": "higher"
+    },
+    "fun": "NULL",
+    "missing_vals": [6, 9]
+  },
+  "Maternal_employment": {
+    "NodeID": "Maternal_employment",
+    "DAG_frag": "Maternal",
+    "Description": "The job of the mother, was the mother a farmer",
+    "DHS7_Recode": "v717",
+    "DHS_desc": "Respondent's occupation (grouped)",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "not working",
+      "1": "professional/technical/managerial",
+      "2": "clerical",
+      "3": "sales",
+      "4": "agricultural - self employed",
+      "5": "agricultural - employee",
+      "6": "household and domestic",
+      "7": "services",
+      "8": "skilled manual",
+      "9": "unskilled manual",
+      "96": "other",
+      "98": "don't know",
+      "99": "missing"
+    },
+    "BN_states": {
+      "1": "unemployed",
+      "2": "agriculture",
+      "3": "other"
+    },
+    "fun": "function (x) \n{\n    if_else(x < 1, 1, if_else(x == 4 | x == 5, 2, 3))\n}",
+    "missing_vals": [98, 99]
+  },
+  "Maternal_age": {
+    "NodeID": "Maternal_age",
+    "DAG_frag": "Maternal",
+    "Description": "The age of the mother at birth",
+    "DHS7_Recode": "v212",
+    "DHS_desc": "Age of respondent at 1st birth",
+    "all_missing": false,
+    "DHS_states": {},
+    "BN_states": {
+      "1": "younger17",
+      "2": "btw17and19",
+      "3": "older19"
+    },
+    "fun": "function (x) \n{\n    x <- if_else(x < 17, 1, if_else(x > 19, 3, 2))\n}",
+    "missing_vals": null
+  },
+  "Preterm_birth": {
+    "NodeID": "Preterm_birth",
+    "DAG_frag": "Maternal",
+    "Description": "Week at gestation",
+    "DHS7_Recode": "b20",
+    "DHS_desc": "Duration of pregnancy",
+    "all_missing": false,
+    "DHS_states": {},
+    "BN_states": {
+      "FALSE": "no",
+      "TRUE": "yes"
+    },
+    "fun": "function (x) \n{\n    x < 9\n}",
+    "missing_vals": null
+  },
+  "Fever": {
+    "NodeID": "Fever",
+    "DAG_frag": "Home environment",
+    "Description": "Number of times in the past 2 weeks the child has had a fever.",
+    "DHS7_Recode": "h22",
+    "DHS_desc": "Had fever in last two weeks",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "no",
+      "1": "yes",
+      "8": "don't know",
+      "9": "missing"
+    },
+    "BN_states": {
+      "0": "no",
+      "1": "yes"
+    },
+    "fun": "NULL",
+    "missing_vals": [8, 9]
+  },
+  "Age": {
+    "NodeID": "Age",
+    "DAG_frag": "Child",
+    "Description": "The age of the child when measurements were taken.",
+    "DHS7_Recode": "b8",
+    "DHS_desc": "Current age of child",
+    "all_missing": false,
+    "DHS_states": {},
+    "BN_states": {
+      "0": "age0",
+      "1": "age1",
+      "2": "age2",
+      "3": "age3",
+      "4": "age4"
+    },
+    "fun": "NULL",
+    "missing_vals": null
+  },
+  "Birth_interval": {
+    "NodeID": "Birth_interval",
+    "DAG_frag": "Maternal",
+    "Description": "The number of months between children",
+    "DHS7_Recode": "hc63",
+    "DHS_desc": "Preceding birth interval (months)",
+    "all_missing": false,
+    "DHS_states": {
+      "999": "missing"
+    },
+    "BN_states": {
+      "FALSE": "less24months",
+      "TRUE": "great24months"
+    },
+    "fun": "function (x) \n{\n    x > 24\n}",
+    "missing_vals": 999
+  },
+  "Healthcare_access": {
+    "NodeID": "Healthcare_access",
+    "DAG_frag": "Home environment",
+    "Description": "Travel time to nearest healthcare facility (caregiver met with healthcare in the pas3 weeks)",
+    "DHS7_Recode": "v467d",
+    "DHS_desc": "Getting medical help for self: distance to health facility",
+    "all_missing": false,
+    "DHS_states": {
+      "0": "no problem",
+      "1": "big problem",
+      "2": "not a big problem",
+      "9": "missing"
+    },
+    "BN_states": {
+      "FALSE": "bigproblem",
+      "TRUE": "notabigproblem"
+    },
+    "fun": "function (x) \n{\n    x < 2\n}",
+    "missing_vals": 9
+  },
+  "HH_crowding": {
+    "NodeID": "HH_crowding",
+    "DAG_frag": "Home environment",
+    "Description": "The number of children in the house affecting food availability",
+    "DHS7_Recode": "v218",
+    "DHS_desc": "Number of living children",
+    "all_missing": false,
+    "DHS_states": {},
+    "BN_states": {
+      "FALSE": "btw0a2",
+      "TRUE": "greatereq3"
+    },
+    "fun": "function (x) \n{\n    x <- x > 3\n}",
+    "missing_vals": null
+  },
+  "Food_diversity": {
+    "NodeID": "Food_diversity",
+    "DAG_frag": "Diet",
+    "missing_vals": [8, 9],
+    "Description": "Has more than 2 food groups (eggs, legumes, grains, dairy, flesh food and vitamin A)",
+    "BN_states": {
+      "FALSE": "insufficient",
+      "TRUE": "sufficient"
+    },
+    "fun": "function (d) \n{\n    d2 <- d %>% mutate(v414g = replace(v414g, v414g >= 8, NA)) %>% mutate(v414o = replace(v414o, v414o >= 8, NA)) %>% mutate(v414e = replace(v414e, v414e >= 8, NA)) %>% mutate(v414f = replace(v414f, v414f >= 8, NA)) %>% mutate(v414p = replace(v414p, v414p >= 8, NA)) %>% mutate(v414v = replace(v414v, v414v >= 8, NA)) %>% mutate(v414j = replace(v414j, v414j >= 8, NA)) %>% mutate(v414k = replace(v414k, v414k >= 8, NA)) %>% mutate(v414h = replace(v414h, v414h >= 8, NA)) %>% mutate(v414m = replace(v414m, \n        v414m >= 8, NA)) %>% mutate(v414n = replace(v414n, v414n >= 8, NA))\n    num_groups <- d$v414g + d$v414o + pmax(d$v414e, d$v414f) + pmax(d$v414p, d$v414v) + pmax(d$v414h, d$v414m, d$v414n) + pmax(d$v414j, d$v414k)\n    x <- num_groups > 2\n}"
+  },
+  "Pollution_birth": {
+    "NodeID": "Pollution_birth",
+    "DAG_frag": "Home environment",
+    "fun": "function (x) \n{\n    if_else(x < 12, 1, if_else(x < 35, 2, if_else(x < 50, 3, 4)))\n}",
+    "BN_states": {
+      "1": "minor",
+      "2": "moderate",
+      "3": "high",
+      "4": "extreme"
+    },
+    "Description": "Average pollution at birth",
+    "DHS7_Recode": "pollution_birth",
+    "missing_vals": null
+  },
+  "Weight": {
+    "NodeID": "Weight",
+    "fun": "function (x) \n{\n    x/1e+06\n}",
+    "DHS7_Recode": "hv005",
+    "Description": "Sample weight"
+  }
+}
